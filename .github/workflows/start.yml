@@ -9,6 +9,7 @@ security:
       - name: Run Snyk to check for vulnerabilities
       - uses: actions/setup-node@v3
           with:
+      node-version: '18.x'
           cache: 'npm'
       - uses: snyk/actions/node@master
           env:
